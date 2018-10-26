@@ -117,24 +117,6 @@ var mySingleton = (function() {
 
     /* ------------------------------------------------------------ */
 
-
-    function statusCodeToMessage(statusCode) {
-
-      if (statusCode == 401) {
-        return "Unauthorized request, invalid email/password or invalid access token";
-      } else if (statusCode == 408) {
-        return "Device is offline";
-      } else if (statusCode == 404) {
-        return "Device not found, invalid EUI64 serial number";
-      } else if (statusCode == 418) {
-        return "The remote server is a teapot (" + statusCode + ")";
-      } else {
-        return "Unknown status code " + statusCode;
-      }
-    }
-
-    /* ------------------------------------------------------------ */
-
     return {
 
       // Public methods and variables
